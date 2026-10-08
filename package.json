@@ -1,0 +1,25 @@
+{
+  "name": "morph-engine",
+  "version": "1.0.0",
+  "description": "Part-by-part screen morphs (\"Transformer\" transitions), a self-building page reveal and a text decode, on view transitions. No runtime dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/aljaztajhman/morph-engine.git" },
+  "keywords": ["view-transitions", "animation", "morph", "transition", "dom"],
+  "exports": { ".": "./dist/morph.js" },
+  "files": ["dist", "src", "README.md", "SKILL.md"],
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "demo": "tsx scripts/build.ts && node examples/serve.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.28.2",
+    "playwright": "1.63.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.2"
+  }
+}
